@@ -118,6 +118,7 @@
     align-items: center;
     justify-content: center;
 }
+/*end banner*/
 /*hot courses*/
 .hot_content {
     display: flex;
@@ -140,8 +141,10 @@
     font-size: 14px;
 }
 .hot_item {
+    width: 268px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(72, 71, 71, 0.5);
+    margin-bottom: 20px;
 }
 .hot_item:hover {
     color: red;
@@ -182,3 +185,72 @@ figure div {
     font-size: 14px;
 }
 /*end hot courses*/
+hr {
+    height: 100px;
+    background-color:rgba(215, 215, 215, .2);
+    border-top-color: transparent;
+}
+/*new courses*/
+.new_list_content {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 850px;
+}
+.list_img img {
+    width: 293px;
+    height: 502px;
+    border-radius: 10px;
+}
+figure {
+    position: relative;
+}
+figure .right-top-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    color: white;
+    border-radius: 0 10px;
+    background-color: #f59a23;
+    padding: 2px;
+}
+.new_list {
+    padding: 50px 0;
+    box-shadow: 0 12px 15px rgba(0, 0, 0,.1);
+}
+/*end new courses*/
+/* footer  */
+.foot_icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.foot_text ul {
+    display: flex;
+    justify-content: space-between;
+    width: 484px;
+    margin: 5px auto 12px;
+}
+.foot_text ul li {
+    list-style: none;
+}
+.foot_text hr {
+    width: 524px;
+    margin: 0 auto;
+    height: .3px;
+    background-color: black;
+}
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+/*end footer*/
