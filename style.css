@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* header */
+.header_img, .header_img>img {
+    width: 100%;
+    height: 70px;
+}
+.header_nav {
+    height: 72px;
+    padding: 0 20px;
+    box-shadow: 0 -3px 15px rgba(0, 0, 0,.5);
+}
+.nav-left {
+    float: left;
+    height: 100%;
+}
+.nav-left img { /*navbar-brand*/
+    float: left;
+    height: 63px;
+    width: 138px;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+/*nav-item*/
+.nav-left ul {
+    float: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.nav-left ul li {
+    list-style: none;
+    margin-left: 20px;
+    text-align: center;
+    position: relative;
+}
+.nav-left ul li i {
+    position: absolute;
+    top: -20px;
+    right: -5px;
+    font-size: .5em;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 3px;
+}
+.nav-right {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-right>div:not(:last-child) {
+    margin-right: 20px;
+}
+#search {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .85);
+    border-radius: 20px;
+    padding: 0;
+    z-index: 1;
+}
+#search .icon {
+    margin: 0;
+}
+#search input {
+    border: none;
+    height: 28px;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+/* end header */
+/* banner */
+.banner {
+    width: 1000px;
+    height: 400px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 12px 24px rgba(7, 17, 27 , .6)
+}
+.banner_left {
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    /* 除了对.banner做overflow: hidden，也可以对.banner_left做border-radius: 10px 0 0 10px; */
+}
+.triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-left: 7px solid gray;
+    position: absolute;
+    margin-left: auto;
+    right: 12px;
+}
+.banner_right {
+    width: 800px;
+}
+.left-item {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*hot courses*/
+.hot_content {
+    display: flex;
+    justify-content: space-between;
+}
+.hot_list {
+    width: 1150px;
+    margin: 50px auto;
+}
+.hot_title {
+    width: 160px;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+.hot_title h4 {
+    font-size: 20px;
+    border-bottom: 2px solid red;
+}
+.hot_title .eng {
+    font-size: 14px;
+}
+.hot_item {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(72, 71, 71, 0.5);
+}
+.hot_item:hover {
+    color: red;
+}
+.hot_item>figure {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 268px;
+}
+.hot_item>figure>img {
+    width: 100%;
+    height: 182px;
+}
+.hot_item>figure>img:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
+figure .title, figcaption {
+    background-color: rgba(222, 217, 217, .5);
+    padding: 0px 10px 10px;
+}
+figure div:last-child {
+    padding-top: 10px;
+}
+figcaption>div>span:first-child { /*hot icon*/
+    position: relative;
+    top: 2px;
+    float: right;
+}
+.count>img {
+    position: relative;
+    top: 2px;
+}
+.count>del, .count>span {
+   float: right; 
+}
+figure div {
+    font-size: 14px;
+}
+/*end hot courses*/
